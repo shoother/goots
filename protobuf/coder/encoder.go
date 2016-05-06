@@ -8,6 +8,7 @@ package coder
 import (
 	"fmt"
 	"reflect"
+	"sort"
 
 	. "github.com/shoother/goots/log"
 	. "github.com/shoother/goots/otstype"
@@ -539,7 +540,19 @@ func _make_table_meta(pb *TableMeta, table_meta interface{}) error {
 		// change map[string]string to []TupleString
 		tuple_string := make([]TupleString, len(table_meta.(OTSTableMeta).SchemaOfPrimaryKey))
 		i := 0
-		for k, v := range table_meta.(OTSTableMeta).SchemaOfPrimaryKey {
+		//for k, v := range table_meta.(OTSTableMeta).SchemaOfPrimaryKey {
+		//	tuple_string[i].K = k
+		//	tuple_string[i].V = v
+		//	i++
+		//}
+		dict := table_meta.(OTSTableMeta).SchemaOfPrimaryKey
+		keys := make([]string, 0, len(dict))
+		for k := range dict {
+			keys = append(keys, k)
+		}
+		sort.Strings(keys)
+		for _, k := range keys {
+			v := dict[k]
 			tuple_string[i].K = k
 			tuple_string[i].V = v
 			i++
