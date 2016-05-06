@@ -19,6 +19,7 @@ import (
 	"strings"
 	// "sync"
 	"time"
+	"os"
 
 	"github.com/golang/protobuf/proto"
 	. "github.com/shoother/goots/log"
@@ -327,6 +328,8 @@ func (o *ots_protocol) make_request(api_name string, args ...interface{}) (query
 	switch t := pb[0].Interface().(type) {
 	case *CreateTableRequest:
 		body, err = proto.Marshal(pb[0].Interface().(*CreateTableRequest))
+		fmt.Println(pb[0].Interface().(*CreateTableRequest), string(body))
+		os.Exit(1)
 	case *ListTableRequest:
 		body, err = proto.Marshal(pb[0].Interface().(*ListTableRequest))
 	case *DeleteTableRequest:
