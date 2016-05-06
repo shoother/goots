@@ -6,7 +6,7 @@
 package goots
 
 import (
-	. "github.com/GiterLab/goots/otstype"
+	. "github.com/shoother/goots/otstype"
 	"testing"
 )
 

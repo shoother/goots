@@ -21,10 +21,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	. "github.com/GiterLab/goots/log"
-	. "github.com/GiterLab/goots/otstype"
-	. "github.com/GiterLab/goots/protobuf"
-	"github.com/GiterLab/goots/protobuf/coder"
+	. "github.com/shoother/goots/log"
+	. "github.com/shoother/goots/otstype"
+	. "github.com/shoother/goots/protobuf"
+	"github.com/shoother/goots/protobuf/coder"
 )
 
 var API_VERSION = "2014-08-08"

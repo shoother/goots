@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/GiterLab/goots/otstype"
-	. "github.com/GiterLab/goots/protobuf"
+	. "github.com/shoother/goots/otstype"
+	. "github.com/shoother/goots/protobuf"
 )
 
 func Test_encode_create_table(t *testing.T) {

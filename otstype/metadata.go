@@ -8,6 +8,7 @@ package otstype
 import (
 	"fmt"
 	"time"
+	"sort"
 )
 
 var OTSColumnType_INF_MIN OTS_INF_MIN // only for GetRange
@@ -133,8 +134,14 @@ func (o OTSPrimaryKey) String() string {
 		return "None"
 	}
 
-	for k, v := range o {
-		r = r + fmt.Sprintf("(%s:%v)", k, v)
+	var keys []string
+	for k, _ := range o {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+
+	for _, k := range keys {
+		r = r + fmt.Sprintf("(%s:%v)", k, o.Get(k))
 	}
 
 	return r

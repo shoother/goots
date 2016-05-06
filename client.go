@@ -15,10 +15,10 @@ import (
 	"sync"
 	"time"
 
-	. "github.com/GiterLab/goots/log"
-	. "github.com/GiterLab/goots/otstype"
-	// . "github.com/GiterLab/goots/protobuf"
-	"github.com/GiterLab/goots/urllib"
+	. "github.com/shoother/goots/log"
+	. "github.com/shoother/goots/otstype"
+	// . "github.com/shoother/goots/protobuf"
+	"github.com/shoother/goots/urllib"
 )
 
 var OTSDebugEnable bool = false     // OTS调试默认关闭

@@ -9,7 +9,7 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	. "github.com/GiterLab/goots/protobuf"
+	. "github.com/shoother/goots/protobuf"
 )
 
 var DebugEncoderEnable = false // 默认关闭

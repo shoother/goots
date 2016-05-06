@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	. "github.com/GiterLab/goots/otstype"
-	"github.com/GiterLab/goots/protobuf"
+	. "github.com/shoother/goots/otstype"
+	"github.com/shoother/goots/protobuf"
 )
 
 func Test_make_headers_string(t *testing.T) {

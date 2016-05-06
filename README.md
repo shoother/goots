@@ -1,40 +1,40 @@
 goots
 =====
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/GiterLab/goots?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/shoother/goots?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Aliyun OTS(Open Table Service) golang SDK.
 
 [![wercker status](https://app.wercker.com/status/08d83208aa0215a6d6a0383b9b77b81d/m "wercker status")](https://app.wercker.com/project/bykey/08d83208aa0215a6d6a0383b9b77b81d)
 
-[![Build Status](https://travis-ci.org/GiterLab/goots.svg?branch=master)](https://travis-ci.org/GiterLab/goots)
-[![GoDoc](http://godoc.org/github.com/GiterLab/goots?status.svg)](http://godoc.org/github.com/GiterLab/goots)
+[![Build Status](https://travis-ci.org/shoother/goots.svg?branch=master)](https://travis-ci.org/shoother/goots)
+[![GoDoc](http://godoc.org/github.com/shoother/goots?status.svg)](http://godoc.org/github.com/shoother/goots)
 
-[![Build Status](https://drone.io/github.com/GiterLab/goots/status.png)](https://drone.io/github.com/GiterLab/goots/latest)
-[![Go Walker](http://gowalker.org/api/v1/badge)](http://gowalker.org/github.com/GiterLab/goots)
-[![](http://gocover.io/_badge/github.com/GiterLab/goots)](http://gocover.io/github.com/GiterLab/goots)
+[![Build Status](https://drone.io/github.com/shoother/goots/status.png)](https://drone.io/github.com/shoother/goots/latest)
+[![Go Walker](http://gowalker.org/api/v1/badge)](http://gowalker.org/github.com/shoother/goots)
+[![](http://gocover.io/_badge/github.com/shoother/goots)](http://gocover.io/github.com/shoother/goots)
 
 ## Support API
 - **Table**
-	- [CreateTable](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/CreateTable.md) ☑
-	- [DeleteTable](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/DeleteTable.md) ☑
-	- [ListTable](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/ListTable.md) ☑
-	- [UpdateTable](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/UpdateTable.md) ☑
-	- [DescribeTable](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/DescribeTable.md) ☑
+	- [CreateTable](https://github.com/shoother/goots/blob/master/doc/goots-doc/CreateTable.md) ☑
+	- [DeleteTable](https://github.com/shoother/goots/blob/master/doc/goots-doc/DeleteTable.md) ☑
+	- [ListTable](https://github.com/shoother/goots/blob/master/doc/goots-doc/ListTable.md) ☑
+	- [UpdateTable](https://github.com/shoother/goots/blob/master/doc/goots-doc/UpdateTable.md) ☑
+	- [DescribeTable](https://github.com/shoother/goots/blob/master/doc/goots-doc/DescribeTable.md) ☑
 - **SingleRow**
-	- [GetRow](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/GetRow.md) ☑
-	- [PutRow](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/PutRow.md) ☑
-	- [UpdateRow](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/UpdateRow.md) ☑
-	- [DeleteRow](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/DeleteRow.md) ☑
+	- [GetRow](https://github.com/shoother/goots/blob/master/doc/goots-doc/GetRow.md) ☑
+	- [PutRow](https://github.com/shoother/goots/blob/master/doc/goots-doc/PutRow.md) ☑
+	- [UpdateRow](https://github.com/shoother/goots/blob/master/doc/goots-doc/UpdateRow.md) ☑
+	- [DeleteRow](https://github.com/shoother/goots/blob/master/doc/goots-doc/DeleteRow.md) ☑
 - **BatchRow**
-	- [BatchGetRow](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/BatchGetRow.md) ☑
-	- [BatchWriteRow](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/BatchWriteRow.md) ☑
-	- [GetRange](https://github.com/GiterLab/goots/blob/master/doc/goots-doc/GetRange.md) ☑
+	- [BatchGetRow](https://github.com/shoother/goots/blob/master/doc/goots-doc/BatchGetRow.md) ☑
+	- [BatchWriteRow](https://github.com/shoother/goots/blob/master/doc/goots-doc/BatchWriteRow.md) ☑
+	- [GetRange](https://github.com/shoother/goots/blob/master/doc/goots-doc/GetRange.md) ☑
 	- <del>XGetRange</del>
 
 ## Install
 
 	$ go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
-	$ go get github.com/GiterLab/goots
+	$ go get github.com/shoother/goots
 
 ## Usage
 
@@ -44,9 +44,9 @@ Aliyun OTS(Open Table Service) golang SDK.
 		"fmt"
 		"os"
 
-		ots2 "github.com/GiterLab/goots"
-		"github.com/GiterLab/goots/log"
-		. "github.com/GiterLab/goots/otstype"
+		ots2 "github.com/shoother/goots"
+		"github.com/shoother/goots/log"
+		. "github.com/shoother/goots/otstype"
 	)
 
 	// modify it to yours
@@ -155,7 +155,7 @@ Aliyun OTS(Open Table Service) golang SDK.
 		}
 	}
 
-More examples, please see [example/interfaces.go](https://github.com/GiterLab/goots/blob/master/example/interfaces.go).
+More examples, please see [example/interfaces.go](https://github.com/shoother/goots/blob/master/example/interfaces.go).
 
 ## Links
 - [Open Table Service，OTS](http://www.aliyun.com/product/ots)
@@ -168,4 +168,4 @@ More examples, please see [example/interfaces.go](https://github.com/GiterLab/go
 
 ## License
 
-This project is under the MIT License. See the [LICENSE](https://github.com/GiterLab/goots/blob/master/LICENSE) file for the full license text.
+This project is under the MIT License. See the [LICENSE](https://github.com/shoother/goots/blob/master/LICENSE) file for the full license text.

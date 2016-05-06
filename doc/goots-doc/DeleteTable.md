@@ -16,7 +16,7 @@ DeleteTable
 
 Example
 =======
-[DeleteTable.go](https://github.com/GiterLab/goots/blob/master/example/2-DeleteTable.go)
+[DeleteTable.go](https://github.com/shoother/goots/blob/master/example/2-DeleteTable.go)
 
 	package main
 	
@@ -24,8 +24,8 @@ Example
 		"fmt"
 		"os"
 	
-		ots2 "github.com/GiterLab/goots"
-		"github.com/GiterLab/goots/log"
+		ots2 "github.com/shoother/goots"
+		"github.com/shoother/goots/log"
 	)
 	
 	// modify it to yours

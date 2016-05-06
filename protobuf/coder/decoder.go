@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	. "github.com/GiterLab/goots/log"
-	. "github.com/GiterLab/goots/otstype"
-	. "github.com/GiterLab/goots/protobuf"
+	. "github.com/shoother/goots/log"
+	. "github.com/shoother/goots/otstype"
+	. "github.com/shoother/goots/protobuf"
 )
 
 var api_decode_map = NewFuncmap()
